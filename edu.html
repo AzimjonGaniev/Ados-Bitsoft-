@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ados</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700;800&family=Open+Sans&display=swap" rel="stylesheet">
+        <style>
+            .row .col-3 button {
+                height: 5rem;
+                margin: 27px 2rem;
+                border: 2px solid #25A18E;
+                color: #25A18E;
+                border-radius: 10px;
+                font-weight: 600;
+                font-size: 1.7rem;
+                width: 95%;
+
+ }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
+            <div class="container">
+              <a class="navbar-brand" href="index.html" style=" font-weight: 900; font-size: 2.5rem; letter-spacing: 0.3rem;"><img src="./image/Logo.png" alt="" class="Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Qidirish"
+                      aria-label="Search" id="input-search">
+                    <img src="./image/sear.png" alt="search icon" >
+                  </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 10rem;" >
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" style="font-size: 25px;color: #004E64 !important; margin-top: 7px;"
+                      aria-current="page" href="#">Kirish</a>
+                  </li>
+                  <li class="nav-item" id="royhat-btn">
+                    <a class="nav-link text-dark" id="royhat"
+                      href="#">Ro'yhatdan o'tish</a>
+                  </li>
+        
+                </ul>
+              
+              </div>
+            </div>
+          </nav>
+        
+          <div class="orta-qism">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h2 class="Jizzax" style="font-size: 25PX; font-weight: 800;letter-spacing: 2px;                  " >TA'LIM MUASSASALARI</h2>
+                </div>
+              </div>
+           
+        
+            <div class="row">
+              <div class="col-9">
+                <div id="Home" class="tabcontent">
+                    <div id="map3" style="position: absolute;"><iframe width="915" height="622" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=sport+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">best sat navs</a></iframe></div>
+               </div>
+    
+                <div id="Contact" class="tabcontent">
+                    <div id="map3" style="position: absolute;"><iframe width="915" height="622" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=entertainment+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">best sat navs</a></iframe></div>
+                </div>
+                
+                <div id="About" class="tabcontent">
+                    <div id="map3" style="position: absolute;"><iframe width="915" height="622" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=education+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">best sat navs</a></iframe></div>
+                </div>
+            </div>
+              
+              <div class="col-3">
+                  <h3 class="headtit" style="color: #25A18E; margin-left: 100px;">Turlar</h3>
+                <button type="button" id="defaultOpen" class="btn btn-outline-info d-block" onclick="openPage('Home', this, '')"id="defaultOpen">Maktablar</button>
+                <button type="button" class="btn btn-outline-info d-block" onclick="openPage('Contact', this, '')">Litsiylar</button>
+                <button type="button" class="btn btn-outline-info d-block" onclick="openPage('About', this, '')">Universitetlar</button>
+                <button type="button" class="btn btn-outline-info d-block" onclick="openPage('Contact', this, '')">Kutubxonalar</button>
+                <button type="button" class="btn btn-outline-info d-block" onclick="openPage('About', this, '')">O'quv markazlari</button>
+            </div>
+            </div>
+            <div class="city" style="margin-top: 33px;">
+                <p>Sizning shaxringiz:</p>
+                <select name="rigion" id="rigion" style="height: 35px;width: 199;border-radius: 7.7px;">
+                    <option value="volvo">Toshkent</option>
+                    <option value="saab">Samarqand</option>
+                    <option value="opel">Jizzax</option>
+                    <option value="audi">Sirdaryo</option>
+                    <option value="volvo">Buxoro</option>
+                    <option value="saab">Navoiy</option>
+                    <option value="opel">Qashqadaryo</option>
+                    <option value="audi">Surxondaryo</option>
+                    <option value="volvo">Xorazm</option>
+                    <option value="saab">Qoraqalpog'iston</option>
+                    <option value="opel">Andijon</option>
+                    <option value="audi">Namangan</option>
+                    <option value="audi">Farg'ona</option>
+                  </select>
+            </div>
+   
+            <img src="image/Group 996.png" style="margin: 38px 0 200px 0;">
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        
+    </body>
+</html>
